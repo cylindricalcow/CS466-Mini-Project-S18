@@ -7,11 +7,26 @@ import knnimpute
 from sklearn.preprocessing import StandardScaler
 #This file is for transforming the csvs into a dataframe that can be called later
 
+def median_rows(x):
+    #n=len(x)
+    new_list=[]
+    new_list2=[]
+    for val in x:
+        if val!=-9999:
+            new_list.append(val)
+    med=np.median(new_list)
+    for val in x:
+        if val!=-9999:
+            new_list2.append(val)
+        else:
+            new_list2.append(med)
+    return new_list2         
 data_dir="../data/"
 
 df = pd.read_csv(data_dir+"77_cancer_proteomes_CPTAC_itraq.csv", header=0,index_col=0)
 patient_info = pd.read_csv(data_dir+"clinical_data_breast_cancer.csv", header=0,index_col=0)
 pam50 = pd.read_csv(data_dir+"PAM50_proteins.csv", header=0,index_col=0)
+df.fillna(-9999, inplace=True)
 
 df.drop(['gene_symbol','gene_name'],axis=1,inplace=True)
 
@@ -38,20 +53,46 @@ into two methods of feature reduction: filling missing values with knn or median
 leave PCA or other feature reductions for the algorithms section.
 '''
 
-
-##Remove rows with more than 20% missing values, STD < 0.4, Standard Scaler
-preprocessed_nan_thresh=preprocessed_numerical_p50.dropna(thresh=0.8*len(preprocessed_numerical_p50), axis=1)
-preprocessed_log2 = np.log2(preprocessed_nan_thresh)
-preprocessed_scaled = StandardScaler().fit_transform(preprocessed_log2)
-threshold = 0.4
-preprocessed_scaled.drop(preprocessed_scaled.std()[preprocessed_scaled.std() < threshold].index.values, axis=1, inplace=True)
 ## Impute missing values with median
+'''
 imputer = Imputer(missing_values='NaN', strategy='median', axis=1)
-imputer = imputer.fit(preprocessed_scaled)
-median_filled = imputer.transform(preprocessed_scaled)
-median_filled.to_csv(data_dir+"median_filled.csv")
+imputer = imputer.fit(preprocessed_numerical_p50)
+median_filled = imputer.transform(preprocessed_numerical_p50)
+'''
 
+preprocessed_numerical_p50=preprocessed_numerical_p50[(preprocessed_numerical_p50==-9999).sum(axis=1)/len(preprocessed_numerical_p50.columns) <= 0.20]
+
+#median_nan_thresh=preprocessed_numerical_p50.drop(thresh=0.8*len(preprocessed_numerical_p50), axis=1)
+#median_nan_thresh.fillna(median_nan_thresh.mean(), inplace=True)
+#median_nan_thresh=preprocessed_numerical_p50.replace(-9999, preprocessed_numerical_p50.median(), axis=1)
+median_nan_thresh=preprocessed_numerical_p50.apply(median_rows)
+#print(median_nan_thresh)
+'''
+for a in median_nan_thresh:
+    if np.isnan(a) == True:
+        print("whoops")
+'''
+#median_log2 = median_nan_thresh.applymap(np.log2)
+#print(median_log2)
+####REMOVED log2 part since it created NaN values
+X=StandardScaler().fit_transform(median_nan_thresh)
+median_scaled = pd.DataFrame(X,index=median_nan_thresh.index, columns=median_nan_thresh.columns)
+threshold = 0.4
+median_scaled.drop(median_scaled.std()[median_scaled.std() < threshold].index.values, axis=1, inplace=True)
+median_scaled.to_csv(data_dir+"median_filled.csv")
 ##Impute with knn
-mask=np.isnan(preprocessed_scaled)
-knn_filled = knnimpute.knn_impute_optimistic(preprocessed_scaled, mask, k=3)   
-knn_filled.to_csv(data_dir+"knn_filled.csv")
+preprocessed_numerical_p50=preprocessed_numerical_p50.replace(-9999, np.nan)
+mask=np.isnan(preprocessed_numerical_p50)
+knn_filled = knnimpute.knn_impute_optimistic(preprocessed_numerical_p50, mask, k=3)
+knn_filled= pd.DataFrame(knn_filled, index=preprocessed_numerical_p50.index, columns=preprocessed_numerical_p50.columns)
+
+knn_log2 = knn_filled.applymap(np.log2)
+knn_scaled = pd.DataFrame(StandardScaler().fit_transform(knn_log2),index=knn_log2.index, columns=knn_log2.columns)
+threshold = 0.4
+knn_scaled.drop(knn_scaled.std()[knn_scaled.std() < threshold].index.values, axis=1, inplace=True)
+
+
+
+
+  
+knn_scaled.to_csv(data_dir+"knn_filled.csv")
