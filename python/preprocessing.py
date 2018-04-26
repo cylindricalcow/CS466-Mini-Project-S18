@@ -34,7 +34,24 @@ df.rename(columns=lambda x: "TCGA-%s" % (re.split('[_|-|.]',x)[0]) if bool(re.se
 
 df=df.transpose()
 
-## Drop clinical entries for samples not in our protein data set
+keep_all=True
+if keep_all:
+    print(len(df.columns),len(df.index))
+    df2=df[(df==-9999).sum(axis=1)/len(df.columns) <= 0.20]
+
+    #median_nan_thresh=preprocessed_numerical_p50.drop(thresh=0.8*len(preprocessed_numerical_p50), axis=1)
+    #median_nan_thresh.fillna(median_nan_thresh.mean(), inplace=True)
+    #median_nan_thresh=preprocessed_numerical_p50.replace(-9999, preprocessed_numerical_p50.median(), axis=1)
+    median_nan_thresh=df2.apply(median_rows)
+    #print(median_nan_thresh)
+
+
+    X=StandardScaler().fit_transform(median_nan_thresh)
+    median_scaled = pd.DataFrame(X,index=median_nan_thresh.index, columns=median_nan_thresh.columns)
+    threshold = 0.4
+    median_scaled.drop(median_scaled.std()[median_scaled.std() < threshold].index.values, axis=1, inplace=True)
+    median_scaled.to_csv(data_dir+"median_filled_all.csv")
+    ## Drop clinical entries for samples not in our protein data set
 patient_info = patient_info.loc[[x for x in patient_info.index.tolist() if x in df.index],:]
 
 ## Add clinical meta data to our protein data set, note: all numerical features for analysis start with NP_ or XP_
@@ -80,10 +97,14 @@ median_scaled = pd.DataFrame(X,index=median_nan_thresh.index, columns=median_nan
 threshold = 0.4
 median_scaled.drop(median_scaled.std()[median_scaled.std() < threshold].index.values, axis=1, inplace=True)
 median_scaled.to_csv(data_dir+"median_filled.csv")
+
+#######################Currently broken
 ##Impute with knn
 preprocessed_numerical_p50=preprocessed_numerical_p50.replace(-9999, np.nan)
+print(preprocessed_numerical_p50)
 mask=np.isnan(preprocessed_numerical_p50)
-knn_filled = knnimpute.knn_impute_optimistic(preprocessed_numerical_p50, mask, k=3)
+#knn_filled = knnimpute.knn_impute_optimistic(preprocessed_numerical_p50, mask, k=3)
+knn_filled = knnimpute.knn_impute_with_argpartition(preprocessed_numerical_p50, mask, k=3)
 knn_filled= pd.DataFrame(knn_filled, index=preprocessed_numerical_p50.index, columns=preprocessed_numerical_p50.columns)
 
 knn_log2 = knn_filled.applymap(np.log2)
