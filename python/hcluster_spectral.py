@@ -52,7 +52,7 @@ seaborn_map.dendrogram_col.plot(seaborn_map.ax_col_dendrogram)
 plt.show()
 
 '''
-'''
+
 linkage=['ward', 'average', 'complete']
 
 n_clusters=4
@@ -63,7 +63,7 @@ clustering_complete = AgglomerativeClustering(linkage=linkage[2], n_clusters=n_c
 clustering_ward.fit(df)
 clustering_avg.fit(df)
 clustering_complete.fit(df)
-
+'''
 #plt.gcf().subplots_adjust(bottom=0.4)
 
 g=sns.clustermap(df,cmap="RdYlGn") 
@@ -75,7 +75,7 @@ def spectral_cluster(X,n_clusters):
     clusterer.fit(X)
     labels= clusterer.labels_
     return labels, clusterer
-
+'''
 n_samples=df.shape[0]
 clusterer=SpectralClustering(n_clusters=8,eigen_solver='arpack',affinity='nearest_neighbors')
 clusterer.fit(df)
@@ -106,14 +106,39 @@ plt.xlabel("k clusters")
 plt.ylabel("Eigenvalue")
 plt.savefig("../plots/Spectral Eigenvalue.png") 
 plt.show()
-
+'''
 clusterer_spetral=spectral_cluster(df,4)[0]
 pca2= PCA(n_components=2)
 X = pca2.fit(df).transform(df)
+'''
 sc=plt.scatter(X[:,0],X[:,1], s=8, alpha=1,c=clusterer_spetral)
 clb = plt.colorbar(sc)
 plt.xlabel("Component 1")
 plt.ylabel("Component 2")
 plt.title("Spectral Clustering")
 plt.savefig("../plots/spectral_pca2.png")
+plt.show()
+'''
+sc=plt.scatter(X[:,0],X[:,1], s=8, alpha=1,c=clustering_ward.labels_)
+clb = plt.colorbar(sc)
+plt.xlabel("Component 1")
+plt.ylabel("Component 2")
+plt.title("Ward Agglomerative Clustering")
+plt.savefig("../plots/ward_agg_pca2.png")
+plt.show()
+
+sc=plt.scatter(X[:,0],X[:,1], s=8, alpha=1,c=clustering_avg.labels_)
+clb = plt.colorbar(sc)
+plt.xlabel("Component 1")
+plt.ylabel("Component 2")
+plt.title("Average Agglomerative Clustering")
+plt.savefig("../plots/avg_agg_pca2.png")
+plt.show()
+
+sc=plt.scatter(X[:,0],X[:,1], s=8, alpha=1,c=clustering_complete.labels_)
+clb = plt.colorbar(sc)
+plt.xlabel("Component 1")
+plt.ylabel("Component 2")
+plt.title("Complete Agglomerative Clustering")
+plt.savefig("../plots/complete_agg_pca2.png")
 plt.show()
