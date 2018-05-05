@@ -1,0 +1,455 @@
+geo_accession,disease state,random
+GSM783365,lung cancer,0
+GSM783366,lung cancer,0
+GSM783367,lung cancer,0
+GSM783368,lung cancer,1
+GSM783369,control,1
+GSM783370,control,0
+GSM783371,control,0
+GSM783372,control,1
+GSM783373,control,1
+GSM783374,control,0
+GSM783375,control,1
+GSM783376,control,1
+GSM783377,control,1
+GSM783378,control,0
+GSM783379,control,0
+GSM783380,lung cancer,0
+GSM783381,control,1
+GSM783382,multiple sclerosis,0
+GSM783383,multiple sclerosis,0
+GSM783384,multiple sclerosis,0
+GSM783385,multiple sclerosis,1
+GSM783386,multiple sclerosis,1
+GSM783387,multiple sclerosis,1
+GSM783388,multiple sclerosis,1
+GSM783389,multiple sclerosis,1
+GSM783390,multiple sclerosis,0
+GSM783391,multiple sclerosis,1
+GSM783392,multiple sclerosis,0
+GSM783393,multiple sclerosis,0
+GSM783394,multiple sclerosis,1
+GSM783395,multiple sclerosis,1
+GSM783396,multiple sclerosis,0
+GSM783397,multiple sclerosis,1
+GSM783398,multiple sclerosis,1
+GSM783399,multiple sclerosis,0
+GSM783400,multiple sclerosis,1
+GSM783401,multiple sclerosis,1
+GSM783402,multiple sclerosis,1
+GSM783403,multiple sclerosis,0
+GSM783404,control,1
+GSM783405,control,0
+GSM783406,control,1
+GSM783407,control,0
+GSM783408,control,1
+GSM783409,control,0
+GSM783410,control,0
+GSM783411,control,0
+GSM783412,other pancreatic tumors and diseases,1
+GSM783413,other pancreatic tumors and diseases,1
+GSM783414,pankreatitis,0
+GSM783415,pancreatic cancer ductal,0
+GSM783416,other pancreatic tumors and diseases,1
+GSM783417,other pancreatic tumors and diseases,0
+GSM783418,control,1
+GSM783419,control,0
+GSM783420,pankreatitis,1
+GSM783421,pankreatitis,1
+GSM783422,pancreatic cancer ductal,1
+GSM783423,other pancreatic tumors and diseases,0
+GSM783424,other pancreatic tumors and diseases,1
+GSM783425,lung cancer,1
+GSM783426,lung cancer,1
+GSM783427,pankreatitis,0
+GSM783428,control,0
+GSM783429,control,0
+GSM783430,lung cancer,1
+GSM783431,lung cancer,1
+GSM783432,lung cancer,1
+GSM783433,lung cancer,0
+GSM783434,lung cancer,0
+GSM783435,lung cancer,0
+GSM783436,tumor of stomach,1
+GSM783437,other pancreatic tumors and diseases,0
+GSM783438,sarcoidosis,0
+GSM783439,sarcoidosis,1
+GSM783440,sarcoidosis,0
+GSM783441,sarcoidosis,0
+GSM783442,sarcoidosis,1
+GSM783443,lung cancer,1
+GSM783444,lung cancer,0
+GSM783445,lung cancer,0
+GSM783446,lung cancer,1
+GSM783447,lung cancer,0
+GSM783448,lung cancer,0
+GSM783449,lung cancer,0
+GSM783450,lung cancer,0
+GSM783451,lung cancer,1
+GSM783452,lung cancer,1
+GSM783453,lung cancer,0
+GSM783454,pankreatitis,0
+GSM783455,pancreatic cancer ductal,0
+GSM783456,pancreatic cancer ductal,0
+GSM783457,pankreatitis,1
+GSM783458,pancreatic cancer ductal,1
+GSM783459,other pancreatic tumors and diseases,1
+GSM783460,pancreatic cancer ductal,0
+GSM783461,pancreatic cancer ductal,1
+GSM783462,pancreatic cancer ductal,0
+GSM783463,pancreatic cancer ductal,0
+GSM783464,pancreatic cancer ductal,0
+GSM783465,pancreatic cancer ductal,0
+GSM783466,other pancreatic tumors and diseases,0
+GSM783467,other pancreatic tumors and diseases,1
+GSM783468,other pancreatic tumors and diseases,1
+GSM783469,other pancreatic tumors and diseases,1
+GSM783470,melanoma,0
+GSM783471,melanoma,0
+GSM783472,melanoma,0
+GSM783473,melanoma,1
+GSM783474,melanoma,0
+GSM783475,lung cancer,1
+GSM783476,lung cancer,0
+GSM783477,lung cancer,0
+GSM783478,wilms tumor,1
+GSM783479,wilms tumor,1
+GSM783480,melanoma,1
+GSM783481,melanoma,1
+GSM783482,melanoma,0
+GSM783483,melanoma,0
+GSM783484,melanoma,1
+GSM783485,melanoma,1
+GSM783486,melanoma,0
+GSM783487,melanoma,0
+GSM783488,prostate cancer,0
+GSM783489,prostate cancer,0
+GSM783490,prostate cancer,0
+GSM783491,prostate cancer,1
+GSM783492,prostate cancer,0
+GSM783493,prostate cancer,0
+GSM783494,melanoma,1
+GSM783495,melanoma,0
+GSM783496,lung cancer,0
+GSM783497,pancreatic cancer ductal,1
+GSM783498,pankreatitis,0
+GSM783499,pancreatic cancer ductal,1
+GSM783500,pancreatic cancer ductal,0
+GSM783501,other pancreatic tumors and diseases,0
+GSM783502,other pancreatic tumors and diseases,1
+GSM783503,other pancreatic tumors and diseases,0
+GSM783504,other pancreatic tumors and diseases,1
+GSM783505,lung cancer,0
+GSM783506,multiple sclerosis,0
+GSM783507,prostate cancer,0
+GSM783508,prostate cancer,1
+GSM783509,prostate cancer,0
+GSM783510,prostate cancer,1
+GSM783511,prostate cancer,1
+GSM783512,prostate cancer,0
+GSM783513,prostate cancer,0
+GSM783514,prostate cancer,1
+GSM783515,pancreatic cancer ductal,1
+GSM783516,pancreatic cancer ductal,1
+GSM783517,pankreatitis,0
+GSM783518,pankreatitis,0
+GSM783519,other pancreatic tumors and diseases,1
+GSM783520,other pancreatic tumors and diseases,1
+GSM783521,control,0
+GSM783522,pankreatitis,0
+GSM783523,control,0
+GSM783524,control,1
+GSM783525,control,0
+GSM783526,control,0
+GSM783527,tumor of stomach,1
+GSM783528,tumor of stomach,0
+GSM783529,tumor of stomach,1
+GSM783530,tumor of stomach,0
+GSM783531,lung cancer,1
+GSM783532,melanoma,1
+GSM783533,melanoma,1
+GSM783534,melanoma,1
+GSM783535,melanoma,0
+GSM783536,other pancreatic tumors and diseases,0
+GSM783537,pankreatitis,0
+GSM783538,pankreatitis,1
+GSM783539,acure myocard infarction,0
+GSM783540,acure myocard infarction,1
+GSM783541,acure myocard infarction,1
+GSM783542,melanoma,0
+GSM783543,melanoma,0
+GSM783544,melanoma,0
+GSM783545,melanoma,0
+GSM783546,melanoma,1
+GSM783547,melanoma,1
+GSM783548,pankreatitis,1
+GSM783549,other pancreatic tumors and diseases,0
+GSM783550,pancreatic cancer ductal,1
+GSM783551,pancreatic cancer ductal,1
+GSM783552,sarcoidosis,1
+GSM783553,sarcoidosis,1
+GSM783554,sarcoidosis,1
+GSM783555,sarcoidosis,0
+GSM783556,sarcoidosis,1
+GSM783557,sarcoidosis,1
+GSM783558,melanoma,1
+GSM783559,melanoma,1
+GSM783560,other pancreatic tumors and diseases,0
+GSM783561,pancreatic cancer ductal,1
+GSM783562,other pancreatic tumors and diseases,0
+GSM783563,other pancreatic tumors and diseases,1
+GSM783564,pancreatic cancer ductal,0
+GSM783565,pankreatitis,0
+GSM783566,other pancreatic tumors and diseases,0
+GSM783567,other pancreatic tumors and diseases,1
+GSM783568,pankreatitis,0
+GSM783569,other pancreatic tumors and diseases,1
+GSM783570,pankreatitis,0
+GSM783571,other pancreatic tumors and diseases,1
+GSM783572,other pancreatic tumors and diseases,0
+GSM783573,pancreatic cancer ductal,0
+GSM783574,pancreatic cancer ductal,1
+GSM783575,pankreatitis,0
+GSM783576,other pancreatic tumors and diseases,1
+GSM783577,pankreatitis,1
+GSM783578,pancreatic cancer ductal,0
+GSM783579,pancreatic cancer ductal,1
+GSM783580,other pancreatic tumors and diseases,0
+GSM783581,pankreatitis,1
+GSM783582,pankreatitis,0
+GSM783583,pancreatic cancer ductal,1
+GSM783584,pancreatic cancer ductal,1
+GSM783585,other pancreatic tumors and diseases,0
+GSM783586,pancreatic cancer ductal,1
+GSM783587,pankreatitis,0
+GSM783588,other pancreatic tumors and diseases,0
+GSM783589,other pancreatic tumors and diseases,1
+GSM783590,pankreatitis,0
+GSM783591,pancreatic cancer ductal,0
+GSM783592,pancreatic cancer ductal,1
+GSM783593,pankreatitis,0
+GSM783594,acure myocard infarction,0
+GSM783595,acure myocard infarction,1
+GSM783596,acure myocard infarction,1
+GSM783597,acure myocard infarction,0
+GSM783598,acure myocard infarction,0
+GSM783599,acure myocard infarction,1
+GSM783600,acure myocard infarction,1
+GSM783601,acure myocard infarction,1
+GSM783602,other pancreatic tumors and diseases,1
+GSM783603,pancreatic cancer ductal,0
+GSM783604,pancreatic cancer ductal,1
+GSM783605,pankreatitis,1
+GSM783606,pancreatic cancer ductal,0
+GSM783607,pankreatitis,0
+GSM783608,pankreatitis,1
+GSM783609,pankreatitis,0
+GSM783610,other pancreatic tumors and diseases,1
+GSM783611,pancreatic cancer ductal,0
+GSM783612,pancreatic cancer ductal,0
+GSM783613,sarcoidosis,1
+GSM783614,sarcoidosis,0
+GSM783615,sarcoidosis,1
+GSM783616,sarcoidosis,0
+GSM783617,sarcoidosis,0
+GSM783618,sarcoidosis,1
+GSM783619,sarcoidosis,0
+GSM783620,sarcoidosis,0
+GSM783621,melanoma,0
+GSM783622,melanoma,1
+GSM783623,melanoma,1
+GSM783624,melanoma,0
+GSM783625,melanoma,1
+GSM783626,melanoma,0
+GSM783627,melanoma,1
+GSM783628,melanoma,0
+GSM783629,other pancreatic tumors and diseases,0
+GSM783630,pancreatic cancer ductal,1
+GSM783631,other pancreatic tumors and diseases,1
+GSM783632,pancreatic cancer ductal,0
+GSM783633,pankreatitis,0
+GSM783634,pancreatic cancer ductal,0
+GSM783635,other pancreatic tumors and diseases,0
+GSM783636,other pancreatic tumors and diseases,1
+GSM783637,sarcoidosis,1
+GSM783638,sarcoidosis,1
+GSM783639,sarcoidosis,1
+GSM783640,sarcoidosis,0
+GSM783641,sarcoidosis,1
+GSM783642,control,1
+GSM783643,control,1
+GSM783644,control,1
+GSM783645,sarcoidosis,0
+GSM783646,sarcoidosis,0
+GSM783647,sarcoidosis,0
+GSM783648,sarcoidosis,1
+GSM783649,sarcoidosis,0
+GSM783650,sarcoidosis,0
+GSM783651,sarcoidosis,0
+GSM783652,sarcoidosis,1
+GSM783653,control,1
+GSM783654,control,0
+GSM783655,control,1
+GSM783656,control,1
+GSM783657,control,0
+GSM783658,control,0
+GSM783659,tumor of stomach,1
+GSM783660,tumor of stomach,0
+GSM783661,tumor of stomach,1
+GSM783662,tumor of stomach,1
+GSM783663,tumor of stomach,1
+GSM783664,tumor of stomach,0
+GSM783665,tumor of stomach,1
+GSM783666,control,1
+GSM783667,tumor of stomach,1
+GSM783668,control,0
+GSM783669,control,0
+GSM783670,control,0
+GSM783671,control,0
+GSM783672,periodontitis,0
+GSM783673,periodontitis,0
+GSM783674,periodontitis,0
+GSM783675,periodontitis,1
+GSM783676,periodontitis,0
+GSM783677,periodontitis,1
+GSM783678,periodontitis,0
+GSM783679,periodontitis,0
+GSM783680,periodontitis,1
+GSM783681,periodontitis,0
+GSM783682,periodontitis,0
+GSM783683,periodontitis,0
+GSM783684,periodontitis,1
+GSM783685,periodontitis,1
+GSM783686,periodontitis,1
+GSM783687,periodontitis,1
+GSM783688,periodontitis,0
+GSM783689,periodontitis,0
+GSM783690,control,0
+GSM783691,control,1
+GSM783692,control,1
+GSM783693,control,1
+GSM783694,sarcoidosis,1
+GSM783695,sarcoidosis,1
+GSM783696,sarcoidosis,1
+GSM783697,sarcoidosis,1
+GSM783698,sarcoidosis,0
+GSM783699,sarcoidosis,1
+GSM783700,sarcoidosis,0
+GSM783701,sarcoidosis,0
+GSM783702,ovarian cancer,0
+GSM783703,ovarian cancer,1
+GSM783704,ovarian cancer,1
+GSM783705,control,0
+GSM783706,ovarian cancer,1
+GSM783707,control,1
+GSM783708,control,0
+GSM783709,ovarian cancer,0
+GSM783710,sarcoidosis,1
+GSM783711,sarcoidosis,1
+GSM783712,sarcoidosis,1
+GSM783713,sarcoidosis,1
+GSM783714,sarcoidosis,1
+GSM783715,control,0
+GSM783716,control,0
+GSM783717,control,0
+GSM783718,ovarian cancer,0
+GSM783719,ovarian cancer,1
+GSM783720,control,1
+GSM783721,ovarian cancer,1
+GSM783722,pancreatic cancer ductal,0
+GSM783723,other pancreatic tumors and diseases,0
+GSM783724,pankreatitis,0
+GSM783725,pankreatitis,0
+GSM783726,other pancreatic tumors and diseases,0
+GSM783727,pancreatic cancer ductal,0
+GSM783728,other pancreatic tumors and diseases,1
+GSM783729,control,1
+GSM783730,control,1
+GSM783731,copd,0
+GSM783732,copd,1
+GSM783733,copd,0
+GSM783734,copd,1
+GSM783735,copd,1
+GSM783736,copd,0
+GSM783737,acure myocard infarction,1
+GSM783738,acure myocard infarction,0
+GSM783739,acure myocard infarction,1
+GSM783740,acure myocard infarction,0
+GSM783741,acure myocard infarction,1
+GSM783742,acure myocard infarction,0
+GSM783743,acure myocard infarction,0
+GSM783744,ovarian cancer,1
+GSM783745,ovarian cancer,0
+GSM783746,ovarian cancer,1
+GSM783747,control,1
+GSM783748,control,1
+GSM783749,control,0
+GSM783750,acure myocard infarction,0
+GSM783751,acure myocard infarction,1
+GSM783752,prostate cancer,0
+GSM783753,copd,1
+GSM783754,ovarian cancer,1
+GSM783755,ovarian cancer,0
+GSM783756,control,1
+GSM783757,control,0
+GSM783758,ovarian cancer,0
+GSM783759,control,1
+GSM783760,ovarian cancer,0
+GSM783761,control,1
+GSM783762,wilms tumor,1
+GSM783763,wilms tumor,1
+GSM783764,wilms tumor,0
+GSM783765,prostate cancer,1
+GSM783766,prostate cancer,1
+GSM783767,copd,0
+GSM783768,copd,1
+GSM783769,copd,1
+GSM783770,copd,1
+GSM783771,lung cancer,1
+GSM783772,prostate cancer,0
+GSM783773,prostate cancer,1
+GSM783774,prostate cancer,1
+GSM783775,prostate cancer,1
+GSM783776,prostate cancer,0
+GSM783777,prostate cancer,0
+GSM783778,copd,0
+GSM783779,copd,1
+GSM783780,copd,0
+GSM783781,copd,0
+GSM783782,copd,1
+GSM783783,copd,1
+GSM783784,copd,0
+GSM783785,pankreatitis,1
+GSM783786,pancreatic cancer ductal,1
+GSM783787,other pancreatic tumors and diseases,0
+GSM783788,other pancreatic tumors and diseases,1
+GSM783789,pancreatic cancer ductal,1
+GSM783790,copd,1
+GSM783791,copd,1
+GSM783792,lung cancer,1
+GSM783793,pankreatitis,0
+GSM783794,pankreatitis,1
+GSM783795,pankreatitis,1
+GSM783796,pancreatic cancer ductal,0
+GSM783797,other pancreatic tumors and diseases,1
+GSM783798,other pancreatic tumors and diseases,1
+GSM783799,other pancreatic tumors and diseases,1
+GSM783800,pancreatic cancer ductal,0
+GSM783801,pankreatitis,0
+GSM783802,control,0
+GSM783803,control,0
+GSM783804,control,1
+GSM783805,control,0
+GSM783806,control,0
+GSM783807,control,1
+GSM783808,control,1
+GSM783809,pankreatitis,0
+GSM783810,pankreatitis,1
+GSM783811,pancreatic cancer ductal,0
+GSM783812,other pancreatic tumors and diseases,0
+GSM783813,pankreatitis,0
+GSM783814,pancreatic cancer ductal,0
+GSM783815,copd,1
+GSM783816,copd,1
+GSM783817,copd,0
+GSM783818,copd,1
