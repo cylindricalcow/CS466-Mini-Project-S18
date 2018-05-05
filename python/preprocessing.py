@@ -7,6 +7,15 @@ import knnimpute
 from sklearn.preprocessing import StandardScaler
 #This file is for transforming the csvs into a dataframe that can be called later
 
+'''
+The unitial preprocessing procedure follows https://www.kaggle.com/piotrgrabo/kmeans-example/code
+I added the std cut, log2, and normalizing the data. For knn imputing, there was a bug in
+the knn module and I didn't have to right the algorithm from scratch.
+
+'''
+
+
+
 def median_rows(x):
     #n=len(x)
     new_list=[]
