@@ -1,0 +1,10 @@
+I intially found the breast cancer and the blood microarray dna data. I then wrote the preoricessing script in the python folder for the 
+breast cancer data. I implemented standard deviation cuts, log2, and removing data with more than 20% missing data. I tried to get the 
+knn impute module working for an alternative imputing method, but I couldn't fix a bug in the code.
+
+Breast Cancer: I proceeded to use PCA to reduce the dimensions and fit Kmeans, HDBSCAN, Spectral, and three different 
+agglomerative clustering algorithms.
+
+Blood: I used the same algorithms on this dataset, but I added manifold.MDS and manifold.TSNE. Adterwards, I wrote code that creates a 
+dataframe with columns of clusters and rows of different diseases/control. The entries of the dataframe are the percentages of illness
+that are in clusters. I also experimented with different standard deviation cuts, correlation matrices, and correlation cuts.
