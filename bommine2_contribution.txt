@@ -1,0 +1,5 @@
+I helped formulate what nature of analysis we would conduct in our report.
+I found the Mice Protein Dataset, and did some standard imputing to clean the data.
+Did all the analysis on the Mice Dataset, specifically, I used KMeans, Ward/Average/Complete Agglomerative, Spectral Clustering with initializations of 8 clusters, and visualized it by mappig the 77 dimensions to 2 through TSNE and MDS before plotting. I found that TSNE seemed to spread out the data more than MDS, so I've included the TSNE visualizations in the report.
+Calculated accuracy scores and timings.
+You can find my workspace in 466_Ranvit_workspace.ipynb in our Github repository.
