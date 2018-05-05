@@ -1,0 +1,5 @@
+I helped contribute to the project proposal document by coming up with ideas. I also came up with a solid plan as to how we would go about the project and split up work throughout.
+
+I investigated the applicability of Gaussian Mixture Model for our project (in code form) as well as potentially looking at Locally Linear Embedding. I came to the conclusion that those two did not really work well, so it was not included in the final report. We felt LLE was not necessary and GMM did not have very good mechanisms for accomplishing what we wished for.
+
+Outside of these two, I just helped overall contribute to ideas for the final report/analysis as well as which datasets to look at.
